@@ -1,5 +1,5 @@
 import { useState } from "react";
-import supabase from "./supaBaseclient";
+import { supabase } from "./supaBaseclient"; // Importing supabase as a named export
 
 const AssignTask = ({ projectId }) => {
     const [taskName, setTaskName] = useState("");
