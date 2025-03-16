@@ -1,134 +1,124 @@
-/* src/components/Login.css */
-
-.login-container {
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: white;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.login-title {
+/* Body */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.front-page-container {
     text-align: center;
-    margin-bottom: 24px;
-    font-size: 24px;
-    color: #333;
+    background-color: #222;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
 }
 
-.login-form {
+/* Header */
+.header h1 {
+    font-size: 2.5rem;
+    color: #f8c8d1; /* Light Pink */
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Login Section */
+.login-section {
+    margin-top: 20px;
+}
+
+.login-options {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-}
-
-.form-input {
-    padding: 12px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    font-size: 16px;
-    transition: border-color 0.3s;
-}
-
-.form-input:focus {
-    outline: none;
-    border-color: #4285f4;
-}
-
-.role-selection {
-    display: flex;
-    margin: 10px 0;
     gap: 20px;
 }
 
-.role-option {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    cursor: pointer;
+.login-option, .signup-option {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.role-option input {
-    cursor: pointer;
+h3 {
+    color: #f8c8d1;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
-.submit-button {
-    padding: 12px;
-    background-color: #4285f4;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 15px;
 }
 
-.submit-button:hover {
-    background-color: #3367d6;
+.btn-login-signup {
+    padding: 12px 25px;
+    background-color: #f8c8d1; /* Light Pink */
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.oauth-container {
-    margin: 24px 0;
+.btn-login-signup:hover {
+    background-color: #f1b7c0;
+    transform: translateY(-3px);
 }
 
-.google-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    background-color: white;
-    color: #757575;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.btn-login-signup:active {
+    background-color: #e2a0b1;
+    transform: translateY(1px);
 }
 
-.google-button:hover {
-    background-color: #f5f5f5;
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #bbb;
 }
 
-.error-message {
-    color: #d93025;
-    font-size: 14px;
-    margin: 8px 0;
+.footer p {
+    margin-top: 10px;
+    font-size: 0.8rem;
 }
 
-.toggle-form {
-    background: none;
-    border: none;
-    color: #4285f4;
-    cursor: pointer;
-    padding: 8px;
-    margin-top: 16px;
-    font-size: 14px;
-    text-align: center;
-    width: 100%;
-}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .front-page-container {
+        width: 90%;
+        padding: 25px;
+    }
 
-.toggle-form:hover {
-    text-decoration: underline;
-}
+    .header h1 {
+        font-size: 2rem;
+    }
 
-/* Optional: Add a divider between form and OAuth buttons */
-.divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 20px 0;
-}
+    .header p {
+        font-size: 1rem;
+    }
 
-.divider::before,
-.divider::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #ddd;
-}
-
-.divider-text {
-    padding: 0 10px;
-    color: #757575;
-    font-size: 14px;
+    .login-options {
+        flex-direction: column;
+    }
 }
