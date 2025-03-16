@@ -1,9 +1,9 @@
 // src/components/Login.js
 
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { supabase } from '../supabaseClient';
-import './Login.css'; // Import the CSS file
+import { useNavigate } from 'react-router-dom'; // For redirecting after login
+import { supabase } from '../supabaseClient'; // Assuming you've set up the supabaseClient.js
+import './Login.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
