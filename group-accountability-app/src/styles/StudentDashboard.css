@@ -1,0 +1,64 @@
+.student-dashboard-container {
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.dashboard-subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.dashboard-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.dashboard-section h2 {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.join-class-form {
+  display: flex;
+  gap: 12px;
+}
+
+.class-code-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.join-class-button {
+  padding: 12px 24px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-class-button:hover {
+  background-color: #d81b60;
+}
+
+.no-projects-message {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  text-align: center;
+  color: #666;
+}
+

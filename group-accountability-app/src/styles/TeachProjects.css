@@ -1,0 +1,142 @@
+.projects-container {
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.projects-subtitle {
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projects-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h3 {
+  margin: 12px 0 4px;
+  font-size: 1.1rem;
+}
+
+.category-card p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.new-folder {
+  border: 2px dashed #f48fb1;
+  background-color: #fff9fa;
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.current-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.status-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.status-indicator.in-progress {
+  background-color: #2196f3; /* Blue */
+}
+
+.status-indicator.completed {
+  background-color: #4caf50; /* Green */
+}
+
+.status-indicator.not-started {
+  background-color: #ff9800; /* Orange */
+}
+
+.project-card h3 {
+  margin: 0 0 12px;
+  padding-left: 8px;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  margin: 4px 0;
+  padding-left: 8px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.project-status {
+  font-weight: 500;
+}
+
+.view-details {
+  display: inline-block;
+  margin-top: 12px;
+  padding-left: 8px;
+  color: #e91e63;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.no-projects {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #666;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+

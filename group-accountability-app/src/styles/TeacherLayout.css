@@ -1,0 +1,133 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffcdd2; /* Light pink */
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #f8bbd0;
+}
+
+.sidebar-header {
+  padding: 20px;
+  border-bottom: 1px solid #f8bbd0;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #f8bbd0;
+}
+
+.nav-item.active {
+  background-color: #f48fb1; /* Slightly darker pink */
+}
+
+.nav-item span {
+  margin-left: 12px;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid #f8bbd0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #e91e63; /* Darker pink */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.user-info p {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.user-role {
+  font-style: italic;
+  color: #888 !important;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  color: #e91e63;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.logout-button span {
+  margin-left: 8px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-switch .switch-button {
+  padding: 8px 16px;
+  background-color: #f48fb1;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.points-display {
+  background-color: #f48fb1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
