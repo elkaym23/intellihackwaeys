@@ -8,9 +8,8 @@
 /* Body */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f8f0f5;
-    /* Light Pink Background */
-    color: #333;
+    background-color: #111;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +19,7 @@ body {
 /* Main Container */
 .front-page-container {
     text-align: center;
-    background-color: #fff;
-    /* White Background */
+    background-color: #222;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -30,29 +28,15 @@ body {
 }
 
 /* Header */
-.header {
-    margin-bottom: 30px;
-}
-
 .header h1 {
-    font-size: 3rem;
-    /* Larger Font for Company Name */
-    font-family: 'Arial', sans-serif;
-    font-weight: bold;
-    color: #f78fb3;
-    /* Light Pink */
+    font-size: 2.5rem;
+    color: #f8c8d1; /* Light Pink */
     margin-bottom: 15px;
-    letter-spacing: 2px;
-    /* Adds spacing between letters */
-    text-transform: uppercase;
-    /* Makes the name stand out more */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Light shadow for depth */
 }
 
 .header p {
     font-size: 1.2rem;
-    color: #888;
+    color: #bbb;
     margin-bottom: 20px;
 }
 
@@ -67,18 +51,15 @@ body {
     gap: 20px;
 }
 
-.login-option,
-.signup-option {
-    background-color: #fce6f5;
-    /* Light Pink Background */
+.login-option, .signup-option {
+    background-color: #333;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
-    color: #f78fb3;
-    /* Light Pink */
+    color: #f8c8d1;
     font-size: 1.6rem;
     margin-bottom: 10px;
 }
@@ -91,9 +72,8 @@ p {
 
 .btn-login-signup {
     padding: 12px 25px;
-    background-color: #f78fb3;
-    /* Light Pink */
-    color: #fff;
+    background-color: #f8c8d1; /* Light Pink */
+    color: #111;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -102,12 +82,12 @@ p {
 }
 
 .btn-login-signup:hover {
-    background-color: #f57c92;
+    background-color: #f1b7c0;
     transform: translateY(-3px);
 }
 
 .btn-login-signup:active {
-    background-color: #f36a85;
+    background-color: #e2a0b1;
     transform: translateY(1px);
 }
 
@@ -115,7 +95,7 @@ p {
 .footer {
     margin-top: 30px;
     font-size: 0.9rem;
-    color: #888;
+    color: #bbb;
 }
 
 .footer p {
@@ -131,7 +111,7 @@ p {
     }
 
     .header h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .header p {
