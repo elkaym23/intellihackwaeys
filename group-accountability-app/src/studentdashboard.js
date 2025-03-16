@@ -9,7 +9,12 @@ const StudentDashboard = () => {
     useEffect(() => {
         // Get current user
         const getCurrentUser = async () => {
-            const { data: { user } } = await supabase.auth.getUser();
+            const { data: { user }, error } = await supabase.auth.getUser();
+            if (error) {
+                console.error('Error fetching user:', error);
+                setLoading(false);
+                return;
+            }
             setUser(user);
 
             // Fetch assigned tasks
@@ -22,8 +27,11 @@ const StudentDashboard = () => {
                     `)
                     .eq('student_id', user.id);
 
-                if (error) console.error('Error fetching tasks:', error);
-                else setTasks(data || []);
+                if (error) {
+                    console.error('Error fetching tasks:', error);
+                } else {
+                    setTasks(data || []);
+                }
             }
             setLoading(false);
         };
@@ -32,8 +40,12 @@ const StudentDashboard = () => {
     }, []);
 
     const handleSignOut = async () => {
-        await supabase.auth.signOut();
-        window.location.href = '/';
+        const { error } = await supabase.auth.signOut();
+        if (error) {
+            console.error('Error signing out:', error);
+        } else {
+            window.location.href = '/';
+        }
     };
 
     const handleUpdateTaskStatus = async (taskId, status) => {

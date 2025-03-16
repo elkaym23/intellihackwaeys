@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from './Login';
-import TeacherDashboard from './teacherdashboard';
+import TeacherDashboard from './teacherdashboad';
 import StudentDashboard from './studentdashboard';
-import SelectRole from './SelectRole';
+import SelectRole from './SelectRoles';
 import { supabase } from './supaBaseclient';
 import "./App.css";
 
