@@ -1,7 +1,7 @@
 # IntelliHackWAEYS
 
 ## Overview
-IntelliHackWAEYS is an accountability app designed for teachers and students to manage projects and tasks effectively. Teachers can create classes, assign tasks, and track student progress, while students can collaborate on projects, manage tasks, and track due dates. The app provides personalized dashboards for both teachers and students.
+kWAEYS is an accountability app designed for teachers and students to manage projects and tasks effectively. Teachers can create classes, assign tasks, and track student progress, while students can collaborate on projects, manage tasks, and track due dates. The app provides personalized dashboards for both teachers and students.
 
 ## Features
 - **Teacher Dashboard**:
