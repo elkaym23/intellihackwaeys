@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // For redirecting after login
 import { supabase } from '../supabaseClient'; // Assuming you've set up the supabaseClient.js
+import './Login.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
