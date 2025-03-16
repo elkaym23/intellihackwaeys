@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from './supaBaseclient';
-import AssignTask from './assigntask';
+import AssignTask from './AssignTask'; // Ensure the correct import path and case
 
 const TeacherDashboard = () => {
     const [user, setUser] = useState(null);

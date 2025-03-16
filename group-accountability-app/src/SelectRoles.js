@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from './supaBaseclient';
-import './login.css';
+import './Login.css';
 
 const SelectRole = () => {
     const [role, setRole] = useState('');

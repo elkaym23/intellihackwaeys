@@ -30,7 +30,8 @@ body {
 /* Header */
 .header h1 {
     font-size: 2.5rem;
-    color: #f8c8d1; /* Light Pink */
+    color: #f8c8d1;
+    /* Light Pink */
     margin-bottom: 15px;
 }
 
@@ -51,7 +52,8 @@ body {
     gap: 20px;
 }
 
-.login-option, .signup-option {
+.login-option,
+.signup-option {
     background-color: #333;
     padding: 25px;
     border-radius: 10px;
@@ -72,7 +74,8 @@ p {
 
 .btn-login-signup {
     padding: 12px 25px;
-    background-color: #f8c8d1; /* Light Pink */
+    background-color: #f8c8d1;
+    /* Light Pink */
     color: #111;
     font-size: 1.1rem;
     font-weight: bold;
